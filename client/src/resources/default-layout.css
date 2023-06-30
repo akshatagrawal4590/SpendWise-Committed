@@ -1,0 +1,37 @@
+.layout{
+    margin: 0 100px;
+}
+
+.header{
+    background-color: #3AA6B9;
+    padding: 20px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    cursor: pointer;
+}
+
+.logo{
+    font-size: 30px;
+    color: rgba(255, 255, 255, 0.948);
+    margin: 0 !important;
+}
+
+.username{
+    font-size: 21px;
+    color: rgba(255, 255, 255, 0.948);
+}
+
+.content{
+    height: 85vh;
+    box-shadow: 0 0 3px gray;
+    margin-top: 20px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    padding: 15px;
+}
+
+@media screen and (max-width:700px) {
+    .layout{
+        margin: 0 15px;
+    }
+}

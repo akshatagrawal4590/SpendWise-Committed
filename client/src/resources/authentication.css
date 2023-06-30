@@ -1,0 +1,38 @@
+.register{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to right, #30cfd0 0%, #330867 100%);
+    font-family: "Montserrat", sans-serif !important;
+}
+
+.register input{
+    background-color: transparent;
+    border: none !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.479) !important;
+    color: rgba(255, 255, 255, 0.664);
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    font-family: "Montserrat", sans-serif !important;
+}
+
+input:focus{
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+label, a{
+    color: rgba(255, 255, 255, 0.664) !important;
+    font-family: "Montserrat", sans-serif !important;
+}
+
+.lottie{
+    height: 400px;
+}
+
+.register h1{
+    font-size: 25px;
+    color: white;
+    font-family: "Montserrat", sans-serif !important;
+}
