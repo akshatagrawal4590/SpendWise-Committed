@@ -1,27 +1,42 @@
 import { Form, message } from "antd";
 import Input from "antd/lib/input/Input";
-import React from "react";
-import { Link } from "react-router-dom";
+import React, {useState, useEffect} from "react";
+import { Link, useNavigate } from "react-router-dom";
 import "../resources/authentication.css";
+import Spinner from "../components/Spinner.js";
+
 import axios from "axios";
 
 function Register() {
 
+    const [loading, setLoading] = useState(false);
+    const navigate = useNavigate(true);
     const onFinish = async function(values)
     {
         try 
         {
+            setLoading(true);
             await axios.post("/api/users/register", values);
+            setLoading(false);
             message.success("Registration successful");    
         } 
         catch (error) 
         {
+            setLoading(false);
             message.error("Something went wrong");    
         }
     }
 
+    useEffect(function() {
+        if(localStorage.getItem("spendwise-user"))
+        {
+            navigate("/");
+        }
+    }, []);
+
     return (
         <div className="register">
+            {loading && <Spinner />}
             <div className="row justify-content-center align-items-center w-100 h-100">
                 <div className="col-md-5">
                     <div className="lottie">
@@ -39,7 +54,7 @@ function Register() {
                             <Input />
                         </Form.Item>
                         <Form.Item label="Password" name="password">
-                            <Input />
+                            <Input type="password"/>
                         </Form.Item>
                         <div className="d-flex justify-content-between align-items-center">
                             <Link to="/login" style={{ textDecoration: "none", fontFamily: "Montserrat, sans-serif"}}>Already registered! Click here to Login</Link>
