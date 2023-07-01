@@ -3,7 +3,7 @@
 }
 
 .header{
-    background-color: #3AA6B9;
+    background-color: #1B6B93;
     padding: 20px;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
@@ -40,6 +40,14 @@
 
 .ant-spin-dot-item{
     background-color: rgba(255, 255, 255, 0.496) !important;
+}
+
+.table{
+    padding-top: 5px;
+}
+
+.ant-table-content{
+    font-family: "Montserrat", sans-serif !important;
 }
 
 @media screen and (max-width:700px) {
