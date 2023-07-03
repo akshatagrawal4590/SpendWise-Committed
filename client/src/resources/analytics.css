@@ -1,0 +1,38 @@
+.transactions-count{
+    box-shadow: 0 0 2px gray;
+    border-radius: 10px;
+    padding: 15px;
+    color: rgb(61, 61, 61) !important;
+}
+
+.analytics h4{
+    font-size: 23px;
+    font-weight: 600;
+}
+
+.analytics h5{
+    font-size: 19px;
+}
+
+.progress-bar{
+    padding-top: 5px;
+}
+
+.ant-progress-text{
+    font-family: "Montserrat", sans-serif !important;
+}
+
+.category-card{
+    padding: 10px 20px;
+    box-shadow: 0 0 2px gray;
+    margin-top: 15px;
+    border-radius: 10px;
+}
+
+.category-analysis{
+    margin-bottom: 5px;
+}
+
+.category-analysis h4{
+    margin-bottom: 15px;
+}

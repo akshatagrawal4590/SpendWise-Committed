@@ -38,7 +38,6 @@ function Login() {
                 <div className="col-md-4">
                     <Form layout="vertical" onFinish={onFinish}>
                         <h1>SPENDWISE / LOGIN</h1>
-                        <hr></hr>
                         <Form.Item label="Email" name="email">
                             <Input />
                         </Form.Item>
@@ -47,7 +46,7 @@ function Login() {
                         </Form.Item>
                         <div className="d-flex justify-content-between align-items-center">
                             <Link to="/register" style={{ textDecoration: "none", fontFamily: "Montserrat, sans-serif" }}>Not registered yet! Click here to Register</Link>
-                            <button className="primary" type="submit">LOGIN</button>
+                            <button className="secondary" type="submit">LOGIN</button>
                         </div>
                     </Form>
                 </div>

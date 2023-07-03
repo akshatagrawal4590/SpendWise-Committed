@@ -32,7 +32,8 @@ label, a{
 }
 
 .register h1{
-    font-size: 25px;
+    font-size: 35px;
     color: white;
     font-family: "Montserrat", sans-serif !important;
+    margin-bottom: 50px;
 }

@@ -24,7 +24,7 @@ function DefaultLayout(props) {
                     <h1 className="logo">SPENDWISE</h1>
                 </div>
                 <div>
-                    <Dropdown menu={{items,}} placement="bottomLeft">
+                    <Dropdown menu={{items}} placement="bottomLeft">
                         <button className="primary">{user.name}</button>
                     </Dropdown>
                 </div>

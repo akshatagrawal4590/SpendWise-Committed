@@ -46,7 +46,6 @@ function Register() {
                 <div className="col-md-4">
                     <Form layout="vertical" onFinish={onFinish}>
                         <h1>SPENDWISE / REGISTER</h1>
-                        <hr></hr>
                         <Form.Item label="Name" name="name">
                             <Input />
                         </Form.Item>
@@ -58,7 +57,7 @@ function Register() {
                         </Form.Item>
                         <div className="d-flex justify-content-between align-items-center">
                             <Link to="/login" style={{ textDecoration: "none", fontFamily: "Montserrat, sans-serif"}}>Already registered! Click here to Login</Link>
-                            <button className="primary" type="submit">REGISTER</button>
+                            <button className="secondary" type="submit">REGISTER</button>
                         </div>
                     </Form>
                 </div>

@@ -45,3 +45,9 @@
 .modalstyle .ant-select-selector {
     font-family: "Montserrat", sans-serif !important;
 }
+
+@media screen and (max-width: 600px) {
+    .filter{
+        overflow-x: scroll;
+    }
+}

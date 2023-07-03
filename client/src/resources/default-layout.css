@@ -29,6 +29,7 @@
     border-top-right-radius: 25px;
     border-bottom: 1px solid gray;
     padding: 15px;
+    overflow-y: scroll;
 }
 
 .spinner{
@@ -48,6 +49,37 @@
 
 .ant-table-content{
     font-family: "Montserrat", sans-serif !important;
+}
+
+.ant-select-selection-item{
+    font-family: "Montserrat", sans-serif !important;   
+}
+
+.ant-select-item-option{
+    font-family: "Montserrat", sans-serif !important;   
+}
+
+.ant-picker-panel{
+    font-family: "Montserrat", sans-serif !important;   
+}
+
+.view-switch{
+    border: 1px solid rgba(0, 0, 0, 0.468);
+    padding: 5px 10px;
+    border-radius: 7px;
+}
+
+.anticon svg{
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.active-icon{
+    color: black;
+}
+
+.inactive-icon{
+    color: gray;
 }
 
 @media screen and (max-width:700px) {
